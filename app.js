@@ -60,3 +60,17 @@ let array = ['Tary', 'Jim', 'Steven', 'Felix'];
 console.log(array);
 
 //Exercise 12
+let foodItems = [
+    {name: 'Burger', price: 5.99},
+    {name: 'Pizza', price: 2.99},
+    {name: 'Taco', price: 3.99},
+];
+
+const foodList =  document.getElementById("foodList");
+
+foodItems.forEach(food => {
+    const foodName = document.createElement('li');
+    foodName.textContent = food.name;
+
+    foodList.append(foodName);
+});
